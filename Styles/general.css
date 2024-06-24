@@ -1,0 +1,133 @@
+.shapeLogin {
+    width: 100vw;
+    position: fixed;
+    right: -50vw;
+    bottom: -30vh;
+    z-index: -100;
+}
+.bar {
+    width: 50px;
+
+}
+.fixedVer {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% - 100px);
+}
+.imageProfile {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+}
+.loader {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    z-index: 10000000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.loader img {
+    width: 15vw;
+    animation: rotatesImg infinite;
+    animation-duration: 2s;
+}
+@keyframes rotatesImg {
+    50% {
+        transform: scale(1.2) rotate(360deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+.graphic {
+    border-radius: 36px;
+    background: #FFF;
+    box-shadow: 4px 4px 20px 0px rgba(193, 193, 193, 0.1);
+}
+.bar {
+    color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.black {
+    background-color: #000000;
+}
+.red {
+    background-color: #E10043;
+}
+.blue {
+    background-color: #0090E1;
+}
+.green {
+    background-color: #00C880;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #c1c1c1;
+}
+.contentDevices {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.scroll {
+    overflow: scroll;
+}
+.scroll::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f5f7f900;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background: #3a3a3a00;
+}
+
+.bgWindow {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(61, 61, 61, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    transition: all .3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: -1000;/*this is */
+    opacity: 0;/*this is */
+}
+.window {
+    padding: 15px 0px 30px 0px;
+    border-radius: 28px;
+    transition: all .3s;
+    
+    transform: scale(0);
+    background-color: #fff;
+}
